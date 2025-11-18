@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+using namespace std;
+
+#ifdef cp_first
+#include "algo/debug.h"
+#else
+#define debug(...)
+#endif
+
+#define int long long
+const int N = 2e5 + 5;
+
+
+
+signed main() {
+	ios::sync_with_stdio(false); cin.tie(NULL);
+	string TYPE; cin >> TYPE;
+	if (TYPE == "first") {
+		// int TC; cin >> TC; while (TC--)
+		{
+			int n; cin >> n;
+
+			vector<int> a(n);
+			for (auto &x : a)cin >> x;
+
+
+		}
+	}
+	else if (TYPE == "second") {
+		// int TC; cin >> TC; while (TC--)
+		{
+			int n; cin >> n;
+			
+			
+
+		}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>code communication run twice</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
