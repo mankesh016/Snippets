@@ -1,0 +1,80 @@
+<snippet>
+	<content><![CDATA[
+const int N = 2e5 + 5;
+const int LOG = 18;
+
+int spt[N][LOG];
+int lg[N];
+
+void build(const vector<int> &a) {
+    int n = a.size();
+    int k = log2(n) + 1;
+
+    lg[1] = 0;
+    for (int i = 2; i <= n; i++) {
+        lg[i] = lg[i / 2] + 1;
+    }
+
+    for (int i = 0; i < n; i++) {
+        spt[i][0] = a[i];
+    }
+    for (int j = 1; j < k; j++) {
+        for (int i = 0; i + (1 << j) <= n; i++) {
+            spt[i][j] = min(spt[i][j - 1], spt[i + (1 << (j - 1))][j - 1]);
+        }
+    }
+}
+
+int query(int l, int r) {
+    int j = lg[r - l + 1];
+    return min(spt[l][j], spt[r - (1 << j) + 1][j]);
+}
+
+int query1(int l, int r) {
+    int mn = INT_MAX;
+    int temp = lg[r - l + 1];
+
+    for (int j = temp; j >= 0; j--) {
+        if ((1 << j) <= r - l + 1) {
+            // sum += spt[l][j];
+            mn = min(mn, spt[l][j]);
+            l += (1 << j);
+        }
+    }
+    return mn;
+}
+
+int query2(int l, int r) {
+    int mn = INT_MAX;
+    for (int j = lg[r - l + 1]; l <= r; j = lg[r - l + 1]) {
+        mn = min(mn, spt[l][j]);
+        l += (1 << j);
+    }
+    return mn;
+}
+
+int query3(int l, int r) {
+    int mn = INT_MAX;
+    int len = r - l + 1;
+
+    int temp = lg[len];
+    // Similar to binary lifting in trees
+
+    for (int j = temp; j >= 0; j--) {
+        if (len & (1 << j)) {
+            // sum += spt[l][j];
+            mn = min(mn, spt[l][j]);
+            l += (1 << j);
+        }
+    }
+    return mn;
+}
+
+// build(a)
+// query(l,r) // zero base indexing
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sparse table</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
