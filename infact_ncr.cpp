@@ -1,5 +1,6 @@
-<snippet>
-	<content><![CDATA[
+
+// ncr inv fact
+
 int fact[N], infact[N];
 
 
@@ -28,10 +29,3 @@ int ncr (int n, int r) {
 }
 
 // pre_fact();
-
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ncr inv fact</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>

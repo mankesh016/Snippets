@@ -1,5 +1,6 @@
-<snippet>
-	<content><![CDATA[
+
+// sparse table
+
 const int N = 2e5 + 5;
 const int LOG = 18;
 
@@ -72,9 +73,4 @@ int query3(int l, int r) {
 
 // build(a)
 // query(l,r) // zero base indexing
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>sparse table</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>
+

@@ -1,5 +1,3 @@
-<snippet>
-	<content><![CDATA[
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -83,10 +81,3 @@ signed main() {
 		for (auto x : ans) cout << x << "\n";
 	}
 }
-
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>Mo's algorithm</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>

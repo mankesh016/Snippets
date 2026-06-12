@@ -1,5 +1,4 @@
-<snippet>
-	<content><![CDATA[
+// code communication twice run, codeforces new interactive problems!!!
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -38,9 +37,3 @@ signed main() {
 		}
 	}
 }
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>code communication run twice</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>

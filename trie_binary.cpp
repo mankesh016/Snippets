@@ -1,6 +1,4 @@
-<snippet>
-	<content><![CDATA[
-
+// trie binary xor
 struct Node {
 	Node* ch[2];
 };
@@ -55,10 +53,3 @@ public:
 		return ans;
 	}
 };
-
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>trie binary xor</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>

@@ -1,5 +1,6 @@
-<snippet>
-	<content><![CDATA[
+
+// trie
+
 struct Node{
     Node* ch[26];
     bool isEnd;
@@ -44,9 +45,3 @@ public:
         return true;
     }
 };
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>trie</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>

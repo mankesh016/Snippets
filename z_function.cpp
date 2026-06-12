@@ -1,6 +1,5 @@
-<snippet>
-	<content><![CDATA[
 
+// z_function
 vector<int> z_funtion(string &s) {
     int n = s.size();
     vector<int> v(n);
@@ -20,10 +19,3 @@ vector<int> z_funtion(string &s) {
 }
 // AABZAABZCAABZAABZA
 // 010041000810051001
-
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>z function</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>
